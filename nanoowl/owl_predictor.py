@@ -457,7 +457,7 @@ class OwlPredictor(torch.nn.Module):
     def predict(self, 
             image: PIL.Image, 
             text: List[str], 
-            text_encodings: Optional[OwlEncodeTextOutput],
+            text_encodings: Optional[OwlEncodeTextOutput] = None,
             threshold: Union[int, float, List[Union[int, float]]] = 0.1,
             pad_square: bool = True,
             
